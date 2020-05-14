@@ -1,4 +1,4 @@
-@import "./config";
+a@import "./config";
 @import "./menu";
 
 * {
@@ -147,3 +147,31 @@ main {
 }
 
 @import "./mobile";
+
+//BEM css format
+//Block component
+.btn{
+
+}
+//Element that depends upon the block
+.btn__price{
+
+}
+//Modifier that changes the style of the block
+.btn--orange{
+
+}
+.btn--big{
+
+}
+
+/* 
+The format for above css
+<a class="btn btn--big btn--orange" href="https://css-trick.com>
+	<span class="btn__price">$9.99</span>
+	<span class="btn__text">Subscribe</span>
+</a>
+
+*/
+
+
