@@ -1,14 +1,31 @@
 {
-	"name": "modern-porfolio",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"sass": "node-sass -w scss/ -o dist/css --recursive"
-	},
-	"author": "The Lazy",
-	"license": "ISC",
-	"dependencies": {
-		"node-sass": "^4.13.1"
-	}
+    "name": "the_lazy_dev_otaku",
+    "version": "1.0.0",
+    "private": true,
+    "repository": "https://github.com/igmrrf/the_lazy_dev_otaku.git",
+    "author": "igmrrf <francis.igbiriki.fi@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/preset-env": "7.2.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "^3.4.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }

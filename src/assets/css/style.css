@@ -103,7 +103,7 @@ header .menu-btn.close .btn-line:nth-child(3) {
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url(../img/moonlight.jpg);
+  background: url(../img/moonlight.png);
   background-size: cover;
   border-radius: 50%;
   border: solid 3px #eece1a;
@@ -177,7 +177,7 @@ body {
 }
 
 body#bg-img {
-  background: url("../img/sit.jpg") no-repeat center center fixed;
+  background: url("../img/sit.png") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -472,4 +472,13 @@ main .icons a:hover {
         grid-template-columns: 1fr;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+/* 
+The format for above css
+<a className="btn btn--big btn--orange" href="https://css-trick.com>
+	<span className="btn__price">$9.99</span>
+	<span className="btn__text">Subscribe</span>
+</a>
+
+*/
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,171 @@
+@import "./config";
+@import "./menu";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include background;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100%;
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    line-height: 1.5;
+}
+
+//Headings
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+
+    &.lg-heading {
+        font-size: 6rem;
+    }
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem, 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+main {
+    padding: 4rem;
+    min-height: calc(90vh);
+    &#home {
+        overflow: hidden;
+        h1 {
+            padding-top: 20vh;
+        }
+    }
+    .sm-heading {
+        padding: 0.2rem 2rem;
+        &:hover {
+            @include easeOut;
+            color: $secondary-color;
+        }
+    }
+    .icons {
+        margin-top: 1 rem;
+        a {
+            padding: 0.4rem;
+            &:hover {
+                color: $secondary-color;
+                @include easeOut;
+            }
+        }
+    }
+}
+.text-secondary {
+    color: $secondary-color;
+    height: 100%;
+}
+@import "./about";
+
+//Projects
+.projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+        border: 3px solid #fff;
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+        }
+    }
+}
+
+//Button Styles
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: set-text-color($secondary-color);
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #333;
+}
+
+//Contact Page
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 1.5rem;
+        border: #fff solid 3px;
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+
+        &:hover {
+            padding: 0.5rem, 1.5rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+        }
+    }
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    height: 60px;
+}
+
+@import "./mobile";
+
+//BEM css format
+//Block component
+.btn {
+}
+//Element that depends upon the block
+.btn__price {
+}
+//Modifier that changes the style of the block
+.btn--orange {
+}
+.btn--big {
+}
+
+/* 
+The format for above css
+<a className="btn btn--big btn--orange" href="https://css-trick.com>
+	<span className="btn__price">$9.99</span>
+	<span className="btn__text">Subscribe</span>
+</a>
+
+*/
