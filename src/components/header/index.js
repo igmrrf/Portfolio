@@ -29,38 +29,37 @@ const Header = () => {
             setShow(false);
         }
     }
-  
 
     return (
         <header>
-            <div className='menu-btn' id='menu-btn' onClick={toggleMenu}>
-                <div className='btn-line'></div>
-                <div className='btn-line'></div>
-                <div className='btn-line'></div>
+            <div className="menu-btn" id="menu-btn" onClick={toggleMenu}>
+                <div className="btn-line"></div>
+                <div className="btn-line"></div>
+                <div className="btn-line"></div>
             </div>
 
-            <nav className='menu'>
-                <div className='menu-branding'>
-                    <div className='portrait'></div>
+            <nav className="menu">
+                <div className="menu-branding">
+                    <div className="portrait"></div>
                 </div>
-                <ul className='menu-nav'>
-                    <li className='nav-item'>
-                        <Link className='nav-link' to='/'>
+                <ul className="menu-nav">
+                    <li className="nav-item" onClick={toggleMenu}>
+                        <Link className="nav-link" to="/">
                             Home
                         </Link>
                     </li>
-                    <li className='nav-item'>
-                        <Link className='nav-link' to='/about'>
+                    <li className="nav-item" onClick={toggleMenu}>
+                        <Link className="nav-link" to="/about">
                             About Me
                         </Link>
                     </li>
-                    <li className='nav-item'>
-                        <Link className='nav-link' to='projects'>
-                            My Work
+                    <li className="nav-item" onClick={toggleMenu}>
+                        <Link className="nav-link" to="projects">
+                            My Projects
                         </Link>
                     </li>
-                    <li className='nav-item'>
-                        <Link className='nav-link' to='/contact'>
+                    <li className="nav-item" onClick={toggleMenu}>
+                        <Link className="nav-link" to="/contact">
                             Contact
                         </Link>
                     </li>

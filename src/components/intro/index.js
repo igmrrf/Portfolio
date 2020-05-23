@@ -7,34 +7,35 @@ export default function Introduction() {
     });
 
     return (
-        <main id='home'>
-            <h1 className='lg-heading'>
-                The Lazy <span className='text-secondary'>Dev Otaku</span>
+        <main id="home">
+            <h1 className="lg-heading">
+                IGBIRIKI <span className="text-secondary">FRANCIS</span> RICHARD
             </h1>
-            <h2 className='sm-heading'>
-                Web Developer, Programmer, Designer & Entrepreneur
+            <h2>(The Lazy Dev Otaku)</h2>
+            <h2 className="sm-heading">
+                Software Developer, Mechanical Engineer & Entrepreneur
             </h2>
-            <div className='icons'>
+            <div className="icons">
                 <a
-                    href='https://www.twitter.com/igmrrf'
-                    className='twitter-icon'
+                    href="https://www.twitter.com/igmrrf"
+                    className="twitter-icon"
                 >
-                    <i className='fab fa-twitter fa-2x'></i>{" "}
+                    <i className="fab fa-twitter fa-2x"></i>{" "}
                 </a>
                 <a
-                    href='https://www.facebook.com/igmrrf'
-                    className='facebook-icon'
+                    href="https://www.facebook.com/igmrrf"
+                    className="facebook-icon"
                 >
-                    <i className='fab fa-facebook fa-2x'></i>
+                    <i className="fab fa-facebook fa-2x"></i>
                 </a>
                 <a
-                    href='https://www.linkedin.com/in/igmrrf'
-                    className='linkedin-icon'
+                    href="https://www.linkedin.com/in/igmrrf"
+                    className="linkedin-icon"
                 >
-                    <i className='fab fa-linkedin fa-2x'></i>
+                    <i className="fab fa-linkedin fa-2x"></i>
                 </a>
-                <a href='https://github.com/igmrrf' className='github-icon'>
-                    <i className='fab fa-github fa-2x'></i>
+                <a href="https://github.com/igmrrf" className="github-icon">
+                    <i className="fab fa-github fa-2x"></i>
                 </a>
             </div>
         </main>
